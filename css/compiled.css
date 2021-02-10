@@ -331,7 +331,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -516,9 +516,22 @@ video {
   height: auto;
 }
 
+@media print {
+  body {
+    width: 21cm;
+    height: 29cm;
+    margin: 0 0 0 0;
+    /* change the margins as you want them to be. */
+  }
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.bg-white-texture {
+  background-image: url('/img/white_texture/white_texture.png');
 }
 
 .border-gray-700 {
@@ -558,6 +571,10 @@ video {
   align-items: baseline;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -570,8 +587,8 @@ video {
   flex: 1 1 0%;
 }
 
-.flex-grow-0 {
-  flex-grow: 0;
+.font-serif {
+  font-family: Libre Baskerville, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-light {
@@ -606,12 +623,13 @@ video {
   line-height: 2.5rem;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
 .list-disc {
   list-style-type: disc;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mx-8 {
@@ -627,8 +645,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .max-h-0 {
@@ -661,11 +687,6 @@ video {
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity));
-}
-
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
@@ -691,8 +712,12 @@ video {
   gap: 0.25rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 @-webkit-keyframes spin {

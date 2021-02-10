@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: {
     enabled: true,
@@ -8,8 +9,15 @@ module.exports = {
     extend: {
       colors: {
         'cyan': '#00c5a9'
+      },
+      fontFamily: {
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+        serif: ["Libre Baskerville", ...defaultTheme.fontFamily.serif]
       }
     },
+    backgroundImage: theme => ({
+      'white-texture': "url('/img/white_texture/white_texture.png')",
+    })
   },
   variants: {
     extend: {},

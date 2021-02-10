@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
+
+@media print {
+    body {
+        width: 21cm;
+        height: 29cm;
+        margin: 0 0 0 0;
+        /* change the margins as you want them to be. */
+    }
+}
+
 @tailwind utilities;
