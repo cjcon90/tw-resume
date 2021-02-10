@@ -12,7 +12,9 @@ npm run install
 
 ## Usage
 
-Page is set to print in A4 size by default. This is set by code in css/styles.css:
+Page is set to print in A4 size by default **in Chrome only** (Firefox page print settings mean it cannot print a full-bleed PDF)
+
+This is set by code in css/styles.css:
 ```
 @media print {
     body {
@@ -24,6 +26,6 @@ Page is set to print in A4 size by default. This is set by code in css/styles.cs
 }
 ```
 
-Open in Chrome browser and in 'More Settings' make sure print margins are set to none.
+Open in Chrome browser and in 'More Settings' make sure print margins are set to none (this should also erase the checkbox 'print headers and footers')
 
-Tick 'Background Graphics' checkbox to print with white textured background. Leave unticked to print plain white background.
+Tick 'Background Graphics' checkbox to print with background image (currently a white textured bg). Leave unticked to print plain white background.
