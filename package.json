@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "A personal resume built using Tailwind",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss css/styles.css -o css/compiled.css",
+    "watch:css": "postcss css/styles.css -o css/compiled.css --watch"
+  },
+  "keywords": [
+    "resume",
+    "cv",
+    "tailwind"
+  ],
+  "author": "Ciaran Concannon",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  }
+}
