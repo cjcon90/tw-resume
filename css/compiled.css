@@ -525,13 +525,8 @@ video {
   }
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
-}
-
 .bg-white-texture {
-  background-image: url('/img/white_texture/white_texture.png');
+  background-image: url('../img/white_texture/white_texture.png');
 }
 
 .border-gray-700 {

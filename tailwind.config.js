@@ -16,7 +16,7 @@ module.exports = {
       }
     },
     backgroundImage: theme => ({
-      'white-texture': "url('/img/white_texture/white_texture.png')",
+      'white-texture': "url('../img/white_texture/white_texture.png')",
     })
   },
   variants: {
