@@ -518,15 +518,18 @@ video {
 
 @media print {
   body {
-    width: 21cm;
-    height: 29cm;
+    width: 8.5in;
+    height: 11in;
     margin: 0 0 0 0;
-    /* change the margins as you want them to be. */
   }
 }
 
 .bg-white-texture {
   background-image: url('../img/white_texture/white_texture.png');
+}
+
+.bg-repeat {
+  background-repeat: repeat;
 }
 
 .border-gray-700 {
@@ -693,6 +696,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.normal-case {
+  text-transform: none;
 }
 
 .w-3\/5 {

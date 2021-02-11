@@ -3,10 +3,9 @@
 
 @media print {
     body {
-        width: 21cm;
-        height: 29cm;
+        width: 8.5in;
+        height: 11in;
         margin: 0 0 0 0;
-        /* change the margins as you want them to be. */
     }
 }
 
